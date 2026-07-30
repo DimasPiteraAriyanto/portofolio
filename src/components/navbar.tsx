@@ -45,11 +45,10 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
           ? "bg-background/80 backdrop-blur-xl border-b border-border shadow-lg shadow-black/5"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -58,7 +57,7 @@ export function Navbar() {
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="text-lg font-bold bg-gradient-to-r from-orange-400 to-amber-300 bg-clip-text text-transparent hover:from-orange-300 hover:to-yellow-200 transition-all"
           >
-            {`<${personalData.name.split(" ")[0]} />`}
+            {`${personalData.name.split(" ")[0]}`}
           </button>
 
           {/* Desktop Links */}
@@ -67,11 +66,10 @@ export function Navbar() {
               <button
                 key={link.href}
                 onClick={() => handleClick(link.href)}
-                className={`px-3 py-2 text-sm rounded-lg transition-all duration-200 ${
-                  activeSection === link.href
+                className={`px-3 py-2 text-sm rounded-lg transition-all duration-200 ${activeSection === link.href
                     ? "text-orange-400 bg-orange-400/10"
                     : "text-muted-foreground hover:text-foreground hover:bg-accent"
-                }`}
+                  }`}
               >
                 {link.label}
               </button>
@@ -102,11 +100,10 @@ export function Navbar() {
                 <button
                   key={link.href}
                   onClick={() => handleClick(link.href)}
-                  className={`block w-full text-left px-3 py-2 text-sm rounded-lg transition-all ${
-                    activeSection === link.href
+                  className={`block w-full text-left px-3 py-2 text-sm rounded-lg transition-all ${activeSection === link.href
                       ? "text-orange-400 bg-orange-400/10"
                       : "text-muted-foreground hover:text-foreground hover:bg-accent"
-                  }`}
+                    }`}
                 >
                   {link.label}
                 </button>
