@@ -12,16 +12,18 @@ import {
 
 export const personalData = {
   name: "Dimas Pitera Ariyanto",
-  tagline: "Back-End & Full Stack Developer",
-  subtitle: "Specializing in PHP (Laravel & CodeIgniter), RESTful APIs, & Scalable Web Systems",
-  location: "Yogyakarta, Indonesia",
+  tagline: "Full Stack Developer",
+  subtitle: "Specializing in PHP (Laravel & CodeIgniter), Node.js, RESTful APIs, & Scalable Web Systems",
+  location: "DI Yogyakarta, Indonesia",
   email: "dimas_pitera@yahoo.com",
-  phone: "+62 967-536-5809",
+  phone: "+62 896-7536-5809",
   github: "https://github.com/DimasPiteraAriyanto",
   linkedin: "https://www.linkedin.com/in/dimas-pitera-ariyanto-6a4513220/",
   avatarUrl: "/avatar.png",
   cvUrl: "/cv.pdf",
-  bio: `Results-driven Back-end and Full Stack Web Developer with nearly 5 years of experience building, optimizing, and maintaining scalable web applications. Strong expertise in PHP (Laravel & CodeIgniter), robust Object-Oriented Programming (OOP) principles, relational & NoSQL databases, and modern web technologies. Focused on performance, system reliability, clean code practices, and automated deployment pipelines.`,
+  bio: `Saya seorang Full Stack Web Developer dengan pengalaman hampir 5 tahun dalam merancang, membangun, dan memelihara aplikasi web berskala tinggi. Mahir dalam pengembangan backend berbasis PHP (Laravel, CodeIgniter) dan Node.js (Express.js), serta frontend modern menggunakan React.js, Next.js, dan Tailwind CSS.
+
+Selain kemampuan pemrograman, saya berpengalaman memimpin tim teknis (Project Management), mengelola sprint Agile, serta terbiasa dengan deployment ke VPS/hosting/server, otomatisasi CI/CD, dan pemahaman dasar jaringan komputer.`,
 };
 
 export const navLinks = [
@@ -38,24 +40,24 @@ export const skillCategories = [
     title: "Backend & Core",
     icon: Server,
     skills: [
-      "PHP",
-      "Laravel Framework",
-      "CodeIgniter",
-      "OOP",
-      "RESTful API Development",
-      "Node.js",
+      "PHP (Laravel & CodeIgniter)",
+      "Node.js & Express.js",
+      "Python",
+      "RESTful API & JWT",
+      "OOP Principles",
+      "OAuth 2.0 & Web Security",
     ],
   },
   {
     title: "Frontend & UI",
     icon: Code2,
     skills: [
-      "JavaScript",
-      "React.js",
-      "Tailwind CSS",
-      "Bootstrap",
-      "HTML5 / CSS3",
-      "Wireframing",
+      "JavaScript (ES6+)",
+      "React.js & Next.js",
+      "Tailwind CSS & CSS3",
+      "Axios & State Management",
+      "HTML5 / Responsive UI",
+      "UI/UX Best Practices",
     ],
   },
   {
@@ -64,10 +66,10 @@ export const skillCategories = [
     skills: [
       "MySQL / PostgreSQL",
       "MongoDB (NoSQL)",
-      "Git (Version Control)",
-      "CI/CD Pipelines",
-      "Jira (Agile/Scrum)",
-      "AI Coding Tools",
+      "VPS / Hosting / Server",
+      "Git & CI/CD Pipelines",
+      "Docker Basics & Networking",
+      "AI Tools (ChatGPT/Claude/Gemini)",
     ],
   },
 ];
@@ -113,102 +115,62 @@ export interface ProjectItem {
 
 export const projects: ProjectItem[] = [
   {
-    name: "Enterprise Laravel REST API & Microservices",
+    name: "SIMPOSYANDU (Sistem Informasi Management Posyandu)",
     description:
-      "Secure and scalable RESTful API service built with Laravel, featuring JWT authentication, automated CI/CD pipelines, and high-performance SQL query optimization.",
-    tech: ["PHP", "Laravel", "PostgreSQL", "REST API", "CI/CD", "Git"],
+      "Aplikasi Sistem Informasi Management Posyandu untuk digitalisasi pencatatan data kesehatan ibu & anak, pemantauan tumbuh kembang balita, serta pelaporan rekapitulasi data Posyandu secara terstruktur.",
+    tech: ["PHP", "CodeIgniter", "MySQL", "Bootstrap", "REST API"],
     demoUrl: "https://github.com/DimasPiteraAriyanto",
     githubUrl: "https://github.com/DimasPiteraAriyanto",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
-        title: "REST API Endpoint & Routing Architecture",
-        caption: "Clean MVC architecture & high-throughput request handling with Laravel & PostgreSQL.",
-      },
-      {
-        url: "https://images.unsplash.com/photo-1618401471353-b98aedd04e11?auto=format&fit=crop&w=1200&q=80",
-        title: "Automated CI/CD & Deployment Pipeline",
-        caption: "Git workflow, automated testing, and zero-downtime deployment pipelines.",
-      },
-      {
-        url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
-        title: "Swagger API Documentation & Analytics",
-        caption: "Interactive OpenAPI documentation and real-time response time monitoring.",
+        url: "/projects/simposyandu.png",
+        title: "Dashboard Management Posyandu",
+        caption: "Digitalisasi rekam medis Posyandu dan grafik pemantauan statistik tumbuh kembang anak.",
       },
     ],
   },
   {
-    name: "High-Throughput NoSQL & Relational DB Architecture",
+    name: "SIMFKS (Sistem Informasi Management Forum Kabupaten Sehat)",
     description:
-      "Multi-database web architecture integrating MySQL and MongoDB for high-throughput client data storage, analytics, and rapid reporting.",
-    tech: ["Laravel", "PHP", "MongoDB", "MySQL", "CodeIgniter"],
+      "Aplikasi Sistem Informasi Management Forum Kabupaten Sehat untuk pengolahan data indikator tatanan kabupaten sehat, pencatatan kegiatan kelembagaan FKS, serta penyusunan laporan kinerja terpadu.",
+    tech: ["PHP", "CodeIgniter", "MySQL", "JavaScript", "Bootstrap"],
     demoUrl: "https://github.com/DimasPiteraAriyanto",
     githubUrl: "https://github.com/DimasPiteraAriyanto",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
-        title: "Hybrid Relational & NoSQL Database Schema",
-        caption: "MySQL relational integrity combined with MongoDB document speed.",
-      },
-      {
-        url: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=1200&q=80",
-        title: "Real-time Data Analytics & Dashboard",
-        caption: "Interactive reporting dashboard for high-volume transactions and system health.",
-      },
-      {
-        url: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=1200&q=80",
-        title: "Query Optimization & Load Testing",
-        caption: "Database query profiling achieving up to 40% performance gain under high loads.",
+        url: "/projects/simfks.png",
+        title: "Portal Indikator Forum Kabupaten Sehat",
+        caption: "Pendataan tatanan indikator daerah sehat dan rekapitulasi kegiatan kelembagaan FKS.",
       },
     ],
   },
   {
-    name: "Interactive IT Training & Learning System",
+    name: "Red Team Pengecekan Web",
     description:
-      "Full-stack web application designed for interactive technical training delivery, participant progress tracking, and bilingual evaluation.",
-    tech: ["React.js", "Laravel", "Tailwind CSS", "JavaScript", "REST API"],
+      "Toolkit otomasi pengujian keamanan (*penetration testing*) berbasis Python untuk analisis kerentanan web, pemindaian celah keamanan (SQLi, File Manipulation, Defacement, Simulasi DDoS), dan laporan audit keamanan.",
+    tech: ["Python", "Security Testing", "Pentest Automation", "SQLi/DDoS Scan"],
     demoUrl: "https://github.com/DimasPiteraAriyanto",
     githubUrl: "https://github.com/DimasPiteraAriyanto",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&q=80",
-        title: "Interactive Trainee Portal Dashboard",
-        caption: "Modern glassmorphism UI for course materials, video lectures, and live code exercises.",
-      },
-      {
-        url: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
-        title: "Live Code Evaluation & Submission",
-        caption: "Real-time code reviewer tool for 20+ trainees per batch with instant feedback.",
-      },
-      {
-        url: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80",
-        title: "Bilingual Mentoring & Analytics Module",
-        caption: "Comprehensive progress tracking for both English and Indonesian training tracks.",
+        url: "/projects/redteam.png",
+        title: "Engine & Dashboard Pengecekan Keamanan Web",
+        caption: "Pemindaian otomatis celah kerentanan web, simulasi beban, dan laporan audit keamanan.",
       },
     ],
   },
   {
-    name: "Business Operations & Management Portal",
+    name: "Inventory Obat Apotek Rafael",
     description:
-      "Client-facing enterprise web application built using CodeIgniter and JavaScript to streamline workflow management and business analytics.",
-    tech: ["CodeIgniter", "PHP", "JavaScript", "Bootstrap", "MySQL"],
+      "Sistem informasi inventaris dan stok obat Apotek Rafael berbasis Laravel dengan otentikasi JWT, pemantauan stok real-time, pelacakan tanggal kedaluwarsa (expiry tracking), dan transaksi penjualan.",
+    tech: ["Laravel", "PHP", "MySQL", "JWT Authentication", "REST API"],
     demoUrl: "https://github.com/DimasPiteraAriyanto",
     githubUrl: "https://github.com/DimasPiteraAriyanto",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
-        title: "Executive Business Overview Portal",
-        caption: "Centralized dashboard for tracking project status, client requests, and SLAs.",
-      },
-      {
-        url: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
-        title: "Automated Workflow Engine & Approvals",
-        caption: "Streamlined operational workflow replacing manual spreadsheets with automated steps.",
-      },
-      {
-        url: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80",
-        title: "Reporting & Stakeholder Integration",
-        caption: "Exportable PDF/Excel reports with Jira and Git workflow integration.",
+        url: "/projects/apotek_rafael.png",
+        title: "Manajemen Inventaris & Stok Obat Apotek Rafael",
+        caption: "Pencatatan stok obat apotek real-time dengan sistem otentikasi JWT & peringatan expired.",
       },
     ],
   },
