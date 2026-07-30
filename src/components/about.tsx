@@ -31,7 +31,7 @@ export function About() {
                       <img
                         src={personalData.avatarUrl}
                         alt={personalData.name}
-                        className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-2xl object-cover border border-orange-400/50 shadow-xl"
+                        className="relative w-48 sm:w-56 h-auto aspect-[2/3] max-h-80 sm:max-h-96 rounded-2xl object-cover object-center border border-orange-400/50 shadow-xl"
                       />
                     ) : (
                       <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-2xl bg-gradient-to-br from-orange-500/20 to-amber-500/20 border border-orange-500/20 flex items-center justify-center">
