@@ -144,21 +144,15 @@ export function Projects() {
 
         <FadeIn delay={0.3}>
           <div className="text-center mt-10">
-            <Button
-              variant="outline"
-              className="border-orange-500/20 hover:border-orange-500/40 hover:bg-orange-500/5"
-              render={
-                <a
-                  href="https://github.com/DimasPiteraAriyanto"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                />
-              }
-              nativeButton={false}
+            <a
+              href="https://github.com/DimasPiteraAriyanto"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-xl text-sm font-semibold border border-orange-500/20 hover:border-orange-500/40 hover:bg-orange-500/10 transition-all duration-300 cursor-pointer"
             >
               <GithubIcon size={18} className="mr-2" />
               View More on GitHub
-            </Button>
+            </a>
           </div>
         </FadeIn>
       </div>

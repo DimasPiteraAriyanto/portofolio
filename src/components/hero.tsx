@@ -88,28 +88,28 @@ export function Hero() {
 
         <FadeIn delay={0.3}>
           <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 transition-all duration-300"
-              render={<a href={personalData.cvUrl} download />}
-              nativeButton={false}
+            <a
+              href="/cv.pdf"
+              download="CV_Dimas_Pitera_Ariyanto.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold text-sm bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 transition-all duration-300 cursor-pointer"
             >
               <Download size={18} className="mr-2" />
               Download CV
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-orange-500/20 hover:bg-orange-500/5 hover:border-orange-500/40 transition-all duration-300"
+            </a>
+            <button
+              type="button"
               onClick={() =>
                 document
                   .querySelector("#contact")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
+              className="inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold text-sm border border-orange-500/20 hover:bg-orange-500/10 hover:border-orange-500/40 text-foreground transition-all duration-300 cursor-pointer"
             >
               <Mail size={18} className="mr-2" />
               Contact Me
-            </Button>
+            </button>
           </div>
         </FadeIn>
 

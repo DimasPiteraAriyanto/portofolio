@@ -120,15 +120,13 @@ export function Contact() {
         {/* CTA */}
         <FadeIn delay={0.3}>
           <div className="mt-12 text-center">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white shadow-lg shadow-orange-500/25"
-              render={<a href={`mailto:${personalData.email}`} />}
-              nativeButton={false}
+            <a
+              href={`mailto:${personalData.email}`}
+              className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white shadow-lg shadow-orange-500/25 hover:shadow-orange-500/40 transition-all duration-300 cursor-pointer"
             >
               <Mail size={18} className="mr-2" />
               Send me an Email
-            </Button>
+            </a>
           </div>
         </FadeIn>
       </div>
