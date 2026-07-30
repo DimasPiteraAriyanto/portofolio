@@ -51,11 +51,11 @@ export function Hero() {
         {personalData.avatarUrl && (
           <FadeIn>
             <div className="mb-6 inline-block relative group">
-              <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-orange-500 via-amber-400 to-yellow-500 opacity-60 blur-md group-hover:opacity-100 transition duration-500" />
+              <div className="absolute -inset-1.5 rounded-full bg-gradient-to-r from-orange-500 via-amber-400 to-yellow-500 opacity-60 blur-md group-hover:opacity-100 transition duration-500" />
               <img
                 src={personalData.avatarUrl}
                 alt={personalData.name}
-                className="relative w-auto h-auto max-w-[240px] sm:max-w-[300px] max-h-[420px] rounded-2xl object-contain border-2 border-orange-400/80 shadow-2xl shadow-orange-500/30"
+                className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full object-cover object-top border-2 border-orange-400/80 shadow-2xl shadow-orange-500/30"
               />
             </div>
           </FadeIn>
