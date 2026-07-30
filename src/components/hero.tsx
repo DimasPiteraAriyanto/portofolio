@@ -55,7 +55,7 @@ export function Hero() {
               <img
                 src={personalData.avatarUrl}
                 alt={personalData.name}
-                className="relative w-36 sm:w-44 h-auto aspect-[2/3] max-h-64 sm:max-h-72 rounded-2xl object-cover object-center border-2 border-orange-400/80 shadow-2xl shadow-orange-500/30"
+                className="relative w-auto h-auto max-w-[240px] sm:max-w-[300px] max-h-[420px] rounded-2xl object-contain border-2 border-orange-400/80 shadow-2xl shadow-orange-500/30"
               />
             </div>
           </FadeIn>
