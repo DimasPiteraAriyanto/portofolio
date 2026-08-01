@@ -40,11 +40,11 @@ export const skillCategories = [
     title: "Backend & Core",
     icon: Server,
     skills: [
-      "PHP (Laravel & CodeIgniter)",
-      "Node.js & Express.js",
-      "Python",
-      "RESTful API & JWT",
-      "OOP Principles",
+      "PHP (Laravel 13 & CodeIgniter)",
+      "Node.js (Puppeteer Stealth, Express.js)",
+      "Python 3.12 (Telegram Bot, Scrapers)",
+      "RESTful API & JWT Authentication",
+      "OOP & Clean Architecture",
       "OAuth 2.0 & Web Security",
     ],
   },
@@ -53,23 +53,23 @@ export const skillCategories = [
     icon: Code2,
     skills: [
       "JavaScript (ES6+)",
-      "React.js & Next.js",
-      "Tailwind CSS & CSS3",
+      "React.js & Next.js 16",
+      "Tailwind CSS v4 & CSS3",
+      "Blade Templating & Dynamic Icons",
       "Axios & State Management",
-      "HTML5 / Responsive UI",
-      "UI/UX Best Practices",
+      "Responsive UI/UX Best Practices",
     ],
   },
   {
     title: "DevOps, DB & Tools",
     icon: Wrench,
     skills: [
-      "MySQL / PostgreSQL",
+      "MySQL, PostgreSQL & SQLite3",
       "MongoDB (NoSQL)",
-      "VPS / Hosting / Server",
-      "Git & CI/CD Pipelines",
-      "Docker Basics & Networking",
-      "AI Tools (ChatGPT/Claude/Gemini)",
+      "Google Cloud APIs (Sheets/Drive)",
+      "Railway & VPS Server Deployment",
+      "Git, GitHub & CI/CD Pipelines",
+      "Red Team Pentest & Security Audit",
     ],
   },
 ];
@@ -80,11 +80,11 @@ export const experiences = [
     position: "Full Stack Programmer | IT Training Instructor",
     duration: "March 2024 – Present",
     descriptions: [
-      "Architected and optimized secure backend services using PHP (Laravel & CodeIgniter), adhering to clean code architecture and OOP principles.",
-      "Designed, developed, and deployed robust REST APIs and automated CI/CD pipelines within agile teams using Jira and Git.",
-      "Managed and integrated structured relational databases (MySQL, PostgreSQL) alongside MongoDB (NoSQL) for high-throughput client data storage.",
-      "Leveraged AI-assisted coding tools (GitHub Copilot, ChatGPT) to accelerate delivery timelines, conduct debugging, and optimize performance.",
-      "Delivered bilingual technical IT training sessions (English / Indonesian) for 20+ participants per batch, mentoring trainees in modern backend engineering.",
+      "Architected and optimized secure backend services using PHP (Laravel & CodeIgniter) and Python, adhering to clean code architecture and OOP principles.",
+      "Designed, developed, and deployed robust REST APIs, Telegram Automation Bots, and automated CI/CD pipelines within agile teams using Jira and Git.",
+      "Managed and integrated structured relational databases (MySQL, PostgreSQL, SQLite) alongside MongoDB (NoSQL) for high-throughput client data storage.",
+      "Leveraged AI-assisted coding tools (GitHub Copilot, ChatGPT, Claude) to accelerate delivery timelines, conduct debugging, and optimize performance.",
+      "Delivered bilingual technical IT training sessions (English / Indonesian) for 20+ participants per batch, mentoring trainees in modern full-stack backend engineering.",
     ],
   },
   {
@@ -93,7 +93,7 @@ export const experiences = [
     duration: "February 2022 – February 2024",
     descriptions: [
       "Led the end-to-end web application development lifecycle (SDLC) from requirements gathering, system workflow design, to testing and final deployment.",
-      "Architected and optimized secure backend services using PHP (Laravel), adhering to clean code architecture and OOP principles.",
+      "Architected and optimized secure backend services using PHP (Laravel) and Node.js, adhering to clean code architecture and OOP principles.",
       "Developed and maintained client-facing business applications utilizing CodeIgniter, JavaScript, and relational databases to improve operational performance.",
       "Conducted intensive stakeholder consultations using Jira and Git for transparent collaboration, transforming requirements into engineering blueprints.",
     ],
@@ -114,6 +114,66 @@ export interface ProjectItem {
 }
 
 export const projects: ProjectItem[] = [
+  {
+    name: "Master System & Multi-App Admin Panel (Laravel 13)",
+    description:
+      "Platform Master Superadmin Dashboard & Single Sign-On (SSO) Hub berbasis Laravel 13 & Tailwind CSS v4 dengan 3-Step Permission Checkpoint System, navigasi menu dinamis hirarkis, serta laporan PDF resmi ber-QR Code.",
+    tech: ["Laravel 13", "PHP 8.2", "Tailwind CSS v4", "MySQL", "Single Sign-On", "Blade"],
+    demoUrl: "https://github.com/DimasPiteraAriyanto",
+    githubUrl: "https://github.com/DimasPiteraAriyanto",
+    images: [
+      {
+        url: "/projects/laravel_master_system.png",
+        title: "Master Superadmin & SSO App Switcher Dashboard",
+        caption: "Manajemen multi-aplikasi enterprise, 3-step permission matrix, dan navigasi menu hirarkis.",
+      },
+    ],
+  },
+  {
+    name: "FinanceBot Telegram & Cashflow Tracker",
+    description:
+      "Bot Telegram manajemen keuangan pribadi & pelacakan cashflow otomatis terintegrasi Google Sheets & Drive API, grafik statistik (Matplotlib), pengingat otomatis (APScheduler), dan monitoring budget.",
+    tech: ["Python 3.12", "Telegram Bot API", "Google Sheets API", "Google Drive API", "Matplotlib", "Pandas"],
+    demoUrl: "https://github.com/DimasPiteraAriyanto",
+    githubUrl: "https://github.com/DimasPiteraAriyanto",
+    images: [
+      {
+        url: "/projects/financebot_telegram.png",
+        title: "Bot Telegram Pencatatan Keuangan Otomatis",
+        caption: "Pencatatan transaksi <5 detik, upload foto struk ke Google Drive, dan grafik statistik bulanan.",
+      },
+    ],
+  },
+  {
+    name: "Multi-Source Institution & Contact Web Scraper",
+    description:
+      "Engine web scraper otomatis berbasis Node.js & Puppeteer Stealth dengan DoH DNS bypass untuk mengekstrak data instansi, universitas, pejabat pimpinan, serta kontak publik terstruktur ke SQLite & Excel.",
+    tech: ["Node.js", "Puppeteer Stealth", "Cheerio", "SQLite3", "ExcelJS", "Winston Logger"],
+    demoUrl: "https://github.com/DimasPiteraAriyanto",
+    githubUrl: "https://github.com/DimasPiteraAriyanto",
+    images: [
+      {
+        url: "/projects/node_scraper.png",
+        title: "Web Scraper Architecture & Target Discovery",
+        caption: "Scraper 2-tahap dengan proteksi anti-duplikasi SQLite master DB dan ekspor Excel otomatis.",
+      },
+    ],
+  },
+  {
+    name: "Red Team Pengecekan Web",
+    description:
+      "Toolkit otomasi pengujian keamanan (*penetration testing*) berbasis Python untuk analisis kerentanan web, pemindaian celah keamanan (SQLi, File Manipulation, Defacement, Simulasi DDoS), dan laporan audit keamanan.",
+    tech: ["Python", "Security Testing", "Pentest Automation", "SQLi/DDoS Scan"],
+    demoUrl: "https://github.com/DimasPiteraAriyanto",
+    githubUrl: "https://github.com/DimasPiteraAriyanto",
+    images: [
+      {
+        url: "/projects/redteam.png",
+        title: "Engine & Dashboard Pengecekan Keamanan Web",
+        caption: "Pemindaian otomatis celah kerentanan web, simulasi beban, dan laporan audit keamanan.",
+      },
+    ],
+  },
   {
     name: "SIMPOSYANDU (Sistem Informasi Management Posyandu)",
     description:
@@ -141,21 +201,6 @@ export const projects: ProjectItem[] = [
         url: "/projects/simfks.png",
         title: "Portal Indikator Forum Kabupaten Sehat",
         caption: "Pendataan tatanan indikator daerah sehat dan rekapitulasi kegiatan kelembagaan FKS.",
-      },
-    ],
-  },
-  {
-    name: "Red Team Pengecekan Web",
-    description:
-      "Toolkit otomasi pengujian keamanan (*penetration testing*) berbasis Python untuk analisis kerentanan web, pemindaian celah keamanan (SQLi, File Manipulation, Defacement, Simulasi DDoS), dan laporan audit keamanan.",
-    tech: ["Python", "Security Testing", "Pentest Automation", "SQLi/DDoS Scan"],
-    demoUrl: "https://github.com/DimasPiteraAriyanto",
-    githubUrl: "https://github.com/DimasPiteraAriyanto",
-    images: [
-      {
-        url: "/projects/redteam.png",
-        title: "Engine & Dashboard Pengecekan Keamanan Web",
-        caption: "Pemindaian otomatis celah kerentanan web, simulasi beban, dan laporan audit keamanan.",
       },
     ],
   },
